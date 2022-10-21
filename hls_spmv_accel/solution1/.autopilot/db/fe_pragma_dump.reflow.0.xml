@@ -1,0 +1,18 @@
+<pragmas>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="173" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="173" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="144" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="103" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="144" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="154" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="128" pragmaType="inline" parentfunction="hls::stream<float, 0>::operator<<(float const&)" off="0" region="0" recursive="0"/>
+<pragma file="proj3/spmv.cpp" line="104" pragmaType="pipeline" parentfunction="spmv_accel" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="128" pragmaType="inline" parentfunction="hls::stream<unsigned int, 0>::operator<<(unsigned int const&)" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="103" pragmaType="inline" parentfunction="hls::stream<unsigned int, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="E:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="154" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="proj3/spmv.cpp" line="0" pragmaType="dataflow" parentfunction="spvm_kernel" disable_start_propagation="0"/>
+<pragma file="proj3/spmv.cpp" line="71" pragmaType="pipeline" parentfunction="spvm_kernel" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="proj3/spmv.cpp" line="53" pragmaType="pipeline" parentfunction="spvm_kernel" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="proj3/spmv.cpp" line="36" pragmaType="pipeline" parentfunction="spvm_kernel" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="proj3/spmv.cpp" line="31" pragmaType="pipeline" parentfunction="spvm_kernel" off="0" ii="-1" rewind="0" style=""/>
+</pragmas>

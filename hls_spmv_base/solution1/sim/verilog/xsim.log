@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 21 22:27:39 2022
+# Process ID: 26580
+# Current directory: D:/Documents/HLS/LabB/hls/spmv_base/solution1/sim/verilog
+# Command line: xsim.exe -source {xsim.dir/spmv/xsim_script.tcl}
+# Log file: D:/Documents/HLS/LabB/hls/spmv_base/solution1/sim/verilog/xsim.log
+# Journal file: D:/Documents/HLS/LabB/hls/spmv_base/solution1/sim/verilog\xsim.jou
+# Running On: LAPTOP-P5G6NA7F, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 16931 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/spmv/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.1/data/ip'.
+# xsim {spmv} -view {{spmv_dataflow_ana.wcfg}} -tclbatch {spmv.tcl} -protoinst {spmv.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file spmv.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_spmv_top/AESL_inst_spmv//AESL_inst_spmv_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/grp_spmv_Pipeline_L2_fu_158_activity
+Time resolution is 1 ps
+open_wave_config spmv_dataflow_ana.wcfg
+source spmv.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set rowPtr__columnIndex__values__y__x__return_group [add_wave_group rowPtr__columnIndex__values__y__x__return(axi_slave) -into $cinoutgroup]
+## add_wave /apatb_spmv_top/AESL_inst_spmv/interrupt -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_BRESP -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_BREADY -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_BVALID -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_RRESP -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_RDATA -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_RREADY -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_RVALID -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_ARREADY -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_ARVALID -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_ARADDR -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_WSTRB -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_WDATA -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_WREADY -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_WVALID -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_AWREADY -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_AWVALID -into $rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/AESL_inst_spmv/s_axi_control_AWADDR -into $rowPtr__columnIndex__values__y__x__return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
+## add_wave /apatb_spmv_top/AESL_inst_spmv/ap_done -into $blocksiggroup
+## add_wave /apatb_spmv_top/AESL_inst_spmv/ap_idle -into $blocksiggroup
+## add_wave /apatb_spmv_top/AESL_inst_spmv/ap_ready -into $blocksiggroup
+## add_wave /apatb_spmv_top/AESL_inst_spmv/ap_start -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_spmv_top/AESL_inst_spmv/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_spmv_top/AESL_inst_spmv/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_spmv_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_spmv_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_spmv_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_spmv_top/LENGTH_rowPtr -into $tb_portdepth_group -radix hex
+## add_wave /apatb_spmv_top/LENGTH_columnIndex -into $tb_portdepth_group -radix hex
+## add_wave /apatb_spmv_top/LENGTH_values -into $tb_portdepth_group -radix hex
+## add_wave /apatb_spmv_top/LENGTH_y -into $tb_portdepth_group -radix hex
+## add_wave /apatb_spmv_top/LENGTH_x -into $tb_portdepth_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_rowPtr__columnIndex__values__y__x__return_group [add_wave_group rowPtr__columnIndex__values__y__x__return(axi_slave) -into $tbcinoutgroup]
+## add_wave /apatb_spmv_top/control_INTERRUPT -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_BRESP -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/control_BREADY -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_BVALID -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_RRESP -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/control_RDATA -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/control_RREADY -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_RVALID -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_ARREADY -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_ARVALID -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_ARADDR -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/control_WSTRB -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/control_WDATA -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## add_wave /apatb_spmv_top/control_WREADY -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_WVALID -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_AWREADY -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_AWVALID -into $tb_rowPtr__columnIndex__values__y__x__return_group -color #ffff00 -radix hex
+## add_wave /apatb_spmv_top/control_AWADDR -into $tb_rowPtr__columnIndex__values__y__x__return_group -radix hex
+## save_wave_config spmv.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2625 ns  Iteration: 12  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2675 ns  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3115 ns  Iteration: 12  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3165 ns  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3605 ns  Iteration: 12  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3655 ns  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3705 ns  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4095 ns  Iteration: 12  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4145 ns  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4195 ns  Iteration: 11  Process: /apatb_spmv_top/AESL_inst_spmv/grp_spmv_Pipeline_L2_fu_158/fadd_32ns_32ns_32_5_full_dsp_1_U1/spmv_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: E:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [n/a] @ "5185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 5245 ns : File "D:/Documents/HLS/LabB/hls/spmv_base/solution1/sim/verilog/spmv.autotb.v" Line 292
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1602.215 ; gain = 0.000

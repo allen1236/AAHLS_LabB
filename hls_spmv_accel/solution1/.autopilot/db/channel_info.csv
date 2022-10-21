@@ -1,0 +1,5 @@
+grp_spvm_kernel_fu_101,rows_fifo_U,depth1.csv,chan_status1.csv
+grp_spvm_kernel_fu_101,row_size_c_U,depth2.csv,chan_status2.csv
+grp_spvm_kernel_fu_101,values_fifo_U,depth3.csv,chan_status3.csv
+grp_spvm_kernel_fu_101,cols_fifo_U,depth4.csv,chan_status4.csv
+grp_spvm_kernel_fu_101,results_fifo_U,depth5.csv,chan_status5.csv

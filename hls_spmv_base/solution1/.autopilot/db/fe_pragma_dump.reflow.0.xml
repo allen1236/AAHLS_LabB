@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="spmv_base/spmv.cpp" line="19" pragmaType="unroll" parentfunction="spmv" factor="8" skip_exit_check="0"/>
+<pragma file="spmv_base/spmv.cpp" line="20" pragmaType="pipeline" parentfunction="spmv" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="spmv_base/spmv.cpp" line="8" pragmaType="interface" parentfunction="spmv" mode="s_axilite" port="rowPtr" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="spmv_base/spmv.cpp" line="9" pragmaType="interface" parentfunction="spmv" mode="s_axilite" port="columnIndex" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="spmv_base/spmv.cpp" line="10" pragmaType="interface" parentfunction="spmv" mode="s_axilite" port="values" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="spmv_base/spmv.cpp" line="11" pragmaType="interface" parentfunction="spmv" mode="s_axilite" port="y" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="spmv_base/spmv.cpp" line="12" pragmaType="interface" parentfunction="spmv" mode="s_axilite" port="x" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="spmv_base/spmv.cpp" line="13" pragmaType="interface" parentfunction="spmv" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

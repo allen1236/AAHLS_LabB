@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="spmv.cpp" path="D:\Documents\HLS\LabB\hls\spmv_base\spmv.cpp"/>
+    <originFiles name="spmv.h" path="D:\Documents\HLS\LabB\hls\spmv_base\spmv.h"/>
+  </source>
+  <testbench>
+    <originFiles name="spmv-top.cpp" path="D:\Documents\HLS\LabB\hls\spmv_base\spmv-top.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

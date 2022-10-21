@@ -1,0 +1,57 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Documents/HLS/LabB/hls/spmv_base/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=spmv" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=rowPtr" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=columnIndex" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=values" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=rowPtr" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=columnIndex" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=values" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=x" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=nRow" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=8" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="spmv_base/spmv.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="spmv_s" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

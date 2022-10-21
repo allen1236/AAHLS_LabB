@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../spmv-top.cpp in debug mode
+   Compiling ../../../spmv.cpp in debug mode
+   Generating csim.exe
+11.000000
+37.000000
+15.000000
+32.000000
+PASS
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

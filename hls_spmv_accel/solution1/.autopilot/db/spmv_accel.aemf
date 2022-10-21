@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1666353885513">
+  <ports id="1" name="values" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="cols" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="9">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="rows" type="PortType" coreName="RAM" coreId="1528853351" bitwidth="32" iftype="IfTypeRegister" arraysize="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="x" type="PortType" coreName="RAM" coreId="1953391988" bitwidth="32" iftype="IfTypeRegister" arraysize="4">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="5" name="y" type="PortType" coreName="RAM" coreId="909194542" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="4">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="row_size" type="PortType" originalName="row_size" coreId="744957216" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="col_size" type="PortType" originalName="col_size" coreId="808591437" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="data_size" type="PortType" originalName="data_size" coreId="1380013858" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="18" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="58" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="60" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="62" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="78" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="91" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="94" source_obj="//@ports.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="95" source_obj="//@ports.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="96" source_obj="//@ports.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="97" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="98" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="99" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="293" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="294" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="295" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="296" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="297" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="298" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="299" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.8"/>
+  <blocks id="34" name="entry" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i" originalName="i" coreId="1768300644" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="data_size_read" originalName="data_size" coreId="543517794" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>data_size</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="col_size_read" originalName="col_size" coreId="2253955496" bitwidth="32" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>col_size</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="row_size_read" originalName="row_size" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>row_size</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="x_local" lineNumber="101" originalName="x_local" fileName="proj3/spmv.cpp" fileDirectory=".." rtlName="x_local_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="spmv_accel" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="101" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="i_write_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="5195342" contextFuncName="spmv_accel" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="0" contextFuncName="spmv_accel" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="proj3/spmv.cpp">
+      <validLinenumbers>101</validLinenumbers>
+      <validLinenumbers>103</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="53" name="for.end.loopexit" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="_ln109" lineNumber="109" fileName="proj3/spmv.cpp" fileDirectory=".." rtlName="grp_spvm_kernel_fu_101" coreId="1769239916" contextFuncName="spmv_accel" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="4.06" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="109" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+      <dataInputObjs>values</dataInputObjs>
+      <dataInputObjs>cols</dataInputObjs>
+      <dataInputObjs>rows</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>y</dataOutputObjs>
+      <constName>spvm_kernel</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="_ln111" lineNumber="111" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1851880563" contextFuncName="spmv_accel" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="111" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="proj3/spmv.cpp">
+      <validLinenumbers>109</validLinenumbers>
+      <validLinenumbers>111</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="144" pipe_depth="2" RegionName="VITIS_LOOP_103_1">
+    <basic_blocks id="39" name="for.inc" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end.loopexit</controlOutputObjs>
+      <controlOutputObjs>for.inc.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="i_4" lineNumber="103" originalName="i" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1769414756" contextFuncName="spmv_accel" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="icmp_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." rtlName="icmp_ln103_fu_124_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="spmv_accel" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="add_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." rtlName="add_ln103_fu_129_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="spmv_accel" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1528955000" contextFuncName="spmv_accel" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+        <controlInputObjs>for.end.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="proj3/spmv.cpp">
+        <validLinenumbers>103</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="50" name="for.inc.split" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="zext_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." rtlName="zext_ln103_fu_135_p1" coreId="0" contextFuncName="spmv_accel" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="x_addr" lineNumber="105" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1835363429" contextFuncName="spmv_accel" bitwidth="2" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="105" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>x</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="x_load" lineNumber="105" fileName="proj3/spmv.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="spmv_accel" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="105" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="bitcast_ln105" lineNumber="105" fileName="proj3/spmv.cpp" fileDirectory=".." rtlName="x_local_d0" coreId="1397508187" contextFuncName="spmv_accel" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="105" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="x_local_addr" lineNumber="105" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1885287519" contextFuncName="spmv_accel" bitwidth="2" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="105" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="x_local_addr_write_ln105" lineNumber="105" fileName="proj3/spmv.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="spmv_accel" opcode="store" nodeLabel="2.0" m_display="0" m_delay="2.32" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="105" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="i_write_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1849762365" contextFuncName="spmv_accel" opcode="store" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln103" lineNumber="103" fileName="proj3/spmv.cpp" fileDirectory=".." coreId="1836086063" contextFuncName="spmv_accel" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="proj3/spmv.cpp" linenumber="103" fileDirectory="D:\Documents\HLS\LabB\hls" functionName="spmv_accel"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="proj3/spmv.cpp">
+        <validLinenumbers>103</validLinenumbers>
+        <validLinenumbers>105</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="data_size_read_reg_157">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_150">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="row_size_read_reg_167">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln103_reg_175">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="x_addr_reg_180">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="col_size_read_reg_162">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <expressionNodes realName="x_addr_gep_fu_76">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln103_fu_135">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_local_addr_gep_fu_89">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln105_fu_145">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_50">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln103_fu_124">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_local_alloca_fu_54">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln103_fu_129">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_spvm_kernel_fu_101">
+    <nodeIds>51</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="i_4_load_fu_121">
+    <nodeIds>35</nodeIds>
+  </ioNodes>
+  <ioNodes realName="col_size_read_read_fu_64">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="row_size_read_read_fu_70">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln103_store_fu_140">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_size_read_read_fu_58">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln103_store_fu_116">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="x">
+    <nodeIds>44</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x_local">
+    <nodeIds>47</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="x_local" portID="100">
+    <nodeIds>51</nodeIds>
+  </memoryPorts>
+  <ioPorts name="col_size">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_size">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="row_size">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x(p0)">
+    <contents name="load">
+      <nodeIds>44</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>52</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="2" latency="2"/>
+      <operations id="48" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="2"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="51" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="51" stage="1" latency="2"/>
+      <operations id="52" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="spmv_accel" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>34</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_103_1" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>50</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-2" mMaxLatency="-2">
+      <basicBlocks>53</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

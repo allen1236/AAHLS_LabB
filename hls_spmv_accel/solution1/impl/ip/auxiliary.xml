@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="spmv_accel" xd:componentRef="spmv_accel" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="ap_return" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(values)" xd:originalName="values" xd:direction="in" xd:interfaceRef="values_q0" xd:busTypeRef="ap_memory" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(cols)" xd:originalName="cols" xd:direction="in" xd:interfaceRef="cols_q0" xd:busTypeRef="ap_memory" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(rows)" xd:originalName="rows" xd:direction="in" xd:interfaceRef="rows_q0" xd:busTypeRef="ap_memory" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(x)" xd:originalName="x" xd:direction="in" xd:interfaceRef="x_q0" xd:busTypeRef="ap_memory" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(y)" xd:originalName="y" xd:direction="out" xd:interfaceRef="y_d0" xd:busTypeRef="ap_memory" xd:dataWidth="32"/>
+  <xd:arg xd:name="row_size" xd:originalName="row_size" xd:direction="in" xd:interfaceRef="row_size" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="col_size" xd:originalName="col_size" xd:direction="in" xd:interfaceRef="col_size" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="data_size" xd:originalName="data_size" xd:direction="in" xd:interfaceRef="data_size" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="2007" xd:FF="1401" xd:BRAM="0" xd:DSP="5"/>
+</xd:acceleratorMap>

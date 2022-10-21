@@ -1,0 +1,55 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Thu Oct 20 20:27:22 2022
+| Host         : LAPTOP-P5G6NA7F running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+-----------------------------+------------+
+| Rule   | Severity | Description                 | Violations |
++--------+----------+-----------------------------+------------+
+| RTGT-1 | Advisory | RAM retargeting possibility | 1          |
++--------+----------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTGT-1#1 Advisory
+RAM retargeting possibility  
+Identified 30 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 10 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_0_0,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_10_10,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_11_11,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_12_12,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_13_13,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_14_14,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_15_15,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_16_16,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_17_17,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_18_18,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_19_19,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_1_1,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_20_20,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_21_21,
+design_1_i/spmv_0/inst/control_s_axi_U/int_y/mem_reg_0_3_22_22
+ (the first 15 of 30 listed)
+Related violations: <none>
+
+
